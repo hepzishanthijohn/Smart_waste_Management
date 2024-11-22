@@ -1,0 +1,22 @@
+.bin-status {
+  margin-bottom: 20px;
+}
+
+.alert {
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+.buzzer,
+.light-indicator {
+  padding: 10px;
+  background-color: #cce5ff;
+  color: #004085;
+}
+
+button:disabled {
+  background-color: #d6d6d6;
+  cursor: not-allowed;
+}

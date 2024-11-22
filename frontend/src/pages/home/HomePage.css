@@ -1,0 +1,66 @@
+.home-page {
+    font-family: Arial, sans-serif;
+}
+
+.hero-section {
+    display: flex;
+    justify-content: space-between; /* Align items on both sides */
+    align-items: center; /* Vertically center the content */
+    padding: 50px;
+}
+
+.hero-content {
+    display: flex;
+    align-items: center; /* Vertically center items */
+    gap: 20px; /* Space between the image and text */
+}
+
+.hero-text {
+    max-width: 50%; /* Ensure the text takes up at most 50% of the width */
+}
+
+.hero-image-container {
+    max-width: 45%; /* Limit the width of the image */
+}
+
+.hero-image {
+    width: 100%; /* Make the image responsive */
+    height: auto;
+    border-radius: 8px; /* Optional, to add rounded corners */
+}
+
+.features {
+    padding: 20px;
+    text-align: center;
+}
+
+.feature-card {
+    margin: 20px 0;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+h2, h3 {
+    margin-bottom: 10px;
+}
+/* Positioning the chatbot icon at the bottom-right corner */
+.chatbot-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+    z-index: 1000;  /* Ensures it stays on top of other elements */
+}
+
+.chatbot-icon img {
+    width: 60px; /* Adjust size of the chatbot icon */
+    height: 60px;
+    border-radius: 50%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for better visibility */
+    transition: transform 0.3s ease;
+}
+
+.chatbot-icon:hover img {
+    transform: scale(1.1); /* Slightly increase size on hover for better interaction */
+}
