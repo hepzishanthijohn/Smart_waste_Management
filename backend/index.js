@@ -10,10 +10,7 @@ const app = express();
 
 // CORS middleware should be placed before other routes
 const cors = require('cors');
-app.use(cors({
-    credentials: true,
-    origin: 'https://smart-waste-management-ryu1.vercel.app'  // Allow requests only from this origin
-}));
+app.use(cors());
 
 // Use JSON parser middleware
 app.use(express.json());
