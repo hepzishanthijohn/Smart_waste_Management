@@ -12,7 +12,7 @@ const app = express();
 const cors = require('cors');
 app.use(cors({
     credentials: true,
-    origin: 'http://localhost:5173'  // Allow requests only from this origin
+    origin: 'https://smart-waste-management-ryu1.vercel.app/'  // Allow requests only from this origin
 }));
 
 // Use JSON parser middleware

@@ -43,7 +43,7 @@ const Register = () => {
                       validationSchema={RegistrationSchema}
                       onSubmit={(values, { setSubmitting, resetForm }) => {
                         // Sending the form data to the API
-                        axios.post('http://localhost:5003/auth/register', values, {
+                        axios.post('https://smart-waste-management-hghe.vercel.app/?vercelToolbarCode=jhX4My_DPOG0j_N/auth/register', values, {
                           headers: {
                             'Content-Type': 'application/json',
                           }
