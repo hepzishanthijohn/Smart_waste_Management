@@ -65,7 +65,7 @@ const Login = () => {
 
   return (
     <>
-      <section className="h-100 gradient-form" style={{ backgroundColor: "#eee" }}>
+      <section className="h-100 gradient-form" >
         <div className="container py-5 h-100">
           <div className="row d-flex justify-content-center align-items-center h-100">
             <div className="col-xl-10">
@@ -79,7 +79,7 @@ const Login = () => {
                           style={{ width: "185px" }}
                           alt="Logo"
                         />
-                        <h4 className="mt-1 mb-5 pb-1">We are The Lotus Team</h4>
+                        <h4 className="mt-1 mb-5 pb-1">Smart Waste Management Team</h4>
                       </div>
 
                       {/* Show error message if any */}
@@ -158,11 +158,13 @@ const Login = () => {
                     <div className="text-white px-3 py-4 p-md-5 mx-md-4">
                       <h4 className="mb-4">We are more than just a company</h4>
                       <p className="small mb-0">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit, sed do eiusmod tempor incididunt ut labore et
-                        dolore magna aliqua. Ut enim ad minim veniam, quis
-                        nostrud exercitation ullamco laboris nisi ut aliquip ex
-                        ea commodo consequat.
+                      Our Smart Waste Management System aims to revolutionize the
+                       way we handle waste. By leveraging advanced technology and 
+                       data-driven solutions, we streamline waste collection, 
+                       reduce environmental impact, and promote recycling. Our system
+                       ensures efficient waste management, making cities cleaner and more
+                       sustainable. Join us in creating a greener future by adopting smarter
+                       waste management practices.
                       </p>
                     </div>
                   </div>

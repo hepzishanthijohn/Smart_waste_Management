@@ -1,48 +1,85 @@
-/* src/styles/Navbar.css */
+/* Base Styles for Navbar */
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #00796b; /* Green background */
-    padding: 10px 20px;
-    color: white;
-  }
-  
-  .navbar .logo {
-    display: flex;
-    align-items: center;
-  }
-  
-  .navbar .logo-img {
-    width: 40px; /* Adjust the logo size */
-    height: auto;
-    margin-right: 10px;
-    border-radius: 50%;
-  }
-  
-  .navbar h1 {
-    font-size: 1.8rem;
-    font-weight: 600;
-  }
-  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #00796b;
+  color: white;
+  z-index: 999;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo-img {
+  width: 40px;
+  height: auto;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+
+.navbar h1 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.nav-links {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li {
+  margin: 0;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+/* Styles for Hamburger Menu (Initially hidden) */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 4px;
+  cursor: pointer;
+}
+
+.hamburger div {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
   .nav-links {
-    list-style: none;
-    display: flex;
-    gap: 20px;
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      right: 20px;
+      background-color: #333;
+      padding: 10px 0;
+      width: 200px;
+      text-align: center;
   }
-  
-  .nav-links li {
-    display: inline;
+
+  .nav-links.active {
+      display: flex;
   }
-  
-  .nav-links a {
-    text-decoration: none;
-    color: white;
-    font-size: 1.1rem;
-    transition: color 0.3s;
+
+  .hamburger {
+      display: flex;
   }
-  
-  .nav-links a:hover {
-    color: #e0f7fa; /* Light cyan color on hover */
-  }
-  
+}
+
