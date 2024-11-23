@@ -33,7 +33,7 @@ const Login = () => {
 
       // Make the API request to authenticate the user
       axios
-        .post("https://smart-waste-management-hghe.vercel.app/?vercelToolbarCode=jhX4My_DPOG0j_N/auth/login", values, {
+        .post("https://smart-waste-management-3.onrender.com/auth/login", values, {
           headers: {
             "Content-Type": "application/json",
           },
