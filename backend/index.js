@@ -12,7 +12,7 @@ const app = express();
 const cors = require('cors');
 app.use(cors({
     credentials: true,
-    origin: 'https://smart-waste-management-ryu1.vercel.app/'  // Allow requests only from this origin
+    origin: 'https://smart-waste-management-hghe.vercel.app/?vercelToolbarCode=jhX4My_DPOG0j_N'  // Allow requests only from this origin
 }));
 
 // Use JSON parser middleware
